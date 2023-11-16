@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+    <link rel="stylesheet" href="/build/stencil-library.css" />
+    <script type="module" src="/build/stencil-library.esm.js"></script>
+    <script nomodule src="/build/stencil-library.js"></script>
+  </head>
+  <body>
+    <anmivin-modal modaltitle="sadasda">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo aut eos qui consequatur cum veniam nisi maxime hic quaerat fuga officia quia expedita voluptate blanditiis
+      repellendus, vel neque quibusdam eius?
+    </anmivin-modal>
+    <anmivin-tooltip text="tooltip text" arrow="true" position="bottom">
+      <anmivin-button size="xl" variant="flat">Lorem ipsum dolor</anmivin-button>
+    </anmivin-tooltip>
+    <anmivin-formwrapper>
+      <anmivin-checkbox formlabel="chekbox1" label="Вот чекбокс"></anmivin-checkbox>
+      <anmivin-textfield label="Это текстфилд" formlabel="textfield1"></anmivin-textfield>
+      <anmivin-textfield label="Второй текстфилд" formlabel="textfield2"></anmivin-textfield>
+    </anmivin-formwrapper>
+    <anmivin-contextmenu menuitems='[{ "title": "first", "action": "console.log(1)" }, {"title": "second", "action": "console.log(2)"}]'></anmivin-contextmenu>
+  </body>
+  <script>
+    const btn = document.querySelector('anmivin-button');
+    const modal = document.querySelector('anmivin-modal');
+    btn.addEventListener('click', () => (modal.isopen = true));
+    modal.addEventListener('submitModal', () => console.log('submitted'));
+    modal.addEventListener('closeModal', () => (modal.isopen = false));
+  </script>
+</html>

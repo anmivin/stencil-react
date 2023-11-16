@@ -1,0 +1,16 @@
+.textfield-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+}
+
+input {
+  outline: none;
+  border: none;
+  background-color: #e0d3c3;
+}
+
+span {
+  font-family: 'Trebuchet MS', sans-serif;
+}

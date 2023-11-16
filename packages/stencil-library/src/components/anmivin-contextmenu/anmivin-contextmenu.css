@@ -1,0 +1,52 @@
+.menu-wrapper {
+  visibility: hidden;
+  width: 120px;
+  background-color: #e0d3c3;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+}
+
+.menu-backdrop {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.menu-icon-button {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.menu-icon-button:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.menu-content {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.isopen {
+  opacity: 1;
+  visibility: visible;
+}

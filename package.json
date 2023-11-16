@@ -1,0 +1,20 @@
+{
+  "name": "stencil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-package": "npx lerna run build --scope={stencil-library,react-library}"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*",
+    "app/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "lerna": "^7.4.2",
+    "typescript": "^5.2.2"
+  }
+}
